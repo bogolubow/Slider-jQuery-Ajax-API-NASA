@@ -144,7 +144,7 @@ $(function(){
             console.log(response, type);
             if(typeof response.url !== 'undefined' && response.media_type === 'image') {
                 var url = response.hdurl;
-                var $image = $('<img>').attr('src', 'dsads');
+                var $image = $('<img>').attr('src', url);
                 $image
                     .on('load', function(){
                         console.log('image load');
