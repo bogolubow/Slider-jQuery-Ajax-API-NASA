@@ -17,3 +17,5 @@
 * Animacje typu: `fadeTo`, `animate` + `position: left`
 
 * HTML + CSS w celu odpowiedniej prezentacji
+
+Zobacz efekt: [Slider - jQuery + Ajax + API NASA](https://bogolubow.github.io/Slider-jQuery-Ajax-API-NASA/).
