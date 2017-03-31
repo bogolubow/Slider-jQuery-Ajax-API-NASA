@@ -11,6 +11,7 @@ $(function(){
     var $nav = $header.find('nav');
     
     var index = 0;
+    var error = 0;
     
     function initBtn() {
         var time = 500;
@@ -142,15 +143,28 @@ $(function(){
         }).done(function(response){
             console.log(response, type);
             if(typeof response.url !== 'undefined' && response.media_type === 'image') {
-                var url = response.url;
-                var $image = $('<img>').attr('src', url);
-                $image.on('load', function(){
+                var url = response.hdurl;
+                var $image = $('<img>').attr('src', 'dsads');
+                $image
+                    .on('load', function(){
+                        console.log('image load');
 
-                    console.log('image load');
+                        $loader.hide();
+                        createImageElement(type, url);
+                    })
+                    .on('error', function(){
+                        console.log('error!');
                     
-                    $loader.hide();
-                    createImageElement(type, url);
-                });
+                        error++;
+                    
+                        if(error > 5) {
+                            alert('Nie mogę pobrać zdjęć');
+                        } else {
+                            setTimeout(function(){
+                                loadImage(type);
+                            }, 1000)
+                        }
+                    });
 
             } else {
                 loadImage(type);

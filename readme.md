@@ -12,7 +12,7 @@
 
 * JSON - akronim od JavaScript Object Notation, który jest formatem wymiany danych
 
-* Eventy (zdarzenia) typu: `mouseenter`, `mouseout`, `click`, `resize`, `load`
+* Eventy (zdarzenia) typu: `mouseenter`, `mouseout`, `click`, `resize`, `load`, `error`
 
 * Animacje typu: `fadeTo`, `animate` + `position: left`
 
