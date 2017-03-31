@@ -1,7 +1,8 @@
 # Slider - jQuery + Ajax + API NASA
 
 > Przykład wykorzystania wiedzy poznanej na zajęciach z jQuery na kursie programowania front-end w systemie bootcamp, na którym jestem mentorem. 
-> Pokaz slajdów polega na pobieraniu zdjęć z API NASA i wyświetleniu ich na całej powierzchni strony. Zdjęcia można przełączać za pomocą strzałek (następne, poprzednie) oraz kropek, które są odpowiednikiem każdego zdjęcia. Jeśli użytkownik kliknie 'następny' lub 'poprzedni', a takie element nie istnieje w drzewie DOM to zostanie pobrane z API. W przeciwnym razie po prostu zostanie uruchomiona animacja przełączenia.
+
+Pokaz slajdów polega na pobieraniu zdjęć z API NASA i wyświetleniu ich na całej powierzchni strony. Zdjęcia można przełączać za pomocą strzałek (następne, poprzednie) oraz kropek, które są odpowiednikiem każdego zdjęcia. Jeśli użytkownik kliknie 'następny' lub 'poprzedni', a takie element nie istnieje w drzewie DOM to zostanie pobrane z API. W przeciwnym razie po prostu zostanie uruchomiona animacja przełączenia.
 
 ## wykorzystane rozwiązania
 
