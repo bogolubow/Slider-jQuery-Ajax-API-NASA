@@ -142,8 +142,8 @@ $(function(){
             url: 'https://api.nasa.gov/planetary/apod?api_key=scXZq06Z33nnXYB5Zx48eTCWbAtFwm851zbFxeFN&date='+getRandomDate()
         }).done(function(response){
             console.log(response, type);
-            if(typeof response.url !== 'undefined' && response.media_type === 'image') {
-                var url = response.hdurl;
+            var url = response.hdurl;
+            if(typeof url !== 'undefined' && response.media_type === 'image') {
                 var $image = $('<img>').attr('src', url);
                 $image
                     .on('load', function(){
