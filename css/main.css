@@ -1,0 +1,126 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 100vh;
+    background: #000;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+header ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10px;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+header ul, header li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header nav {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+header nav a {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+header nav a.active, header nav a:hover {
+    background: #3498db;
+}
+
+header .prev-wrapper, header .next-wrapper {
+    top: 50%;
+    left: 0;
+    margin-top: -25px;
+    font-size: 30px;
+    overflow:hidden;
+    
+}
+
+header span {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+header .next-wrapper {
+    right: 0;
+    left: auto;
+}
+
+header .prev, header .next {
+    background: #fff;
+    cursor: pointer;
+}
+
+header .next {
+    right: 0;
+}
+
+header .prev {
+    left: 0;
+}
+
+header .prev:after {
+    content: '<'
+}
+
+header .next:after {
+    content: '>';
+}
+
+header .loader {
+    display: none;
+    left: 50%;
+    top: 50%;
+    margin-top: -15px;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
