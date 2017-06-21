@@ -16,7 +16,7 @@ Pokaz slajdów polega na pobieraniu (losowo) zdjęć z API NASA i wyświetleniu 
 
 * Eventy (zdarzenia) typu: `mouseenter`, `mouseout`, `click`, `resize`, `load`, `error`
 
-* Animacje typu: `fadeTo`, `animate` + `position: left`
+* Animacje typu: `fadeTo`, `animate` + `position: absolute;` + `left: 0`
 
 * HTML + CSS w celu odpowiedniej prezentacji
 
